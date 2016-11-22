@@ -1,0 +1,1 @@
+﻿body{padding:0;margin:0;}body.theme-light{background-color:#000;color:#000;}body.theme-dark{background-color:#1e1e1e;color:#fff;}.flex-container{display:flex;-ms-flex-flow:column nowrap;-webkit-flex-flow:column nowrap;flex-flow:column nowrap;justify-content:space-between;}#editor{flex-basis:100vh;padding:10px;}

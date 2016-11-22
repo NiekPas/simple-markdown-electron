@@ -1,0 +1,59 @@
+﻿$transition-default: 0.3s ease-out;
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body.theme-light {
+    background-color:#fff;      /* TODO maybe make this a softer white? */
+    color: #000;
+}
+
+body.theme-dark {
+    background-color:#1E1E1E;
+    color:#fff;
+    #editor-buttons {
+        background-color: transparent;
+    }
+}
+
+#editor-buttons {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 40px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* IE/Edge */
+    user-select: none;           /* non-prefixed version, currently not supported by any browser */
+
+    transition: transform $transition-default;
+
+    &.collapsed {
+        transform: translateY(-80%);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            padding: 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+#editor {
+    height: 100vh;
+    width: 98vw;    // Ensure there is no overlap between editor-buttons and text
+    padding:10px;
+    &:focus {
+        outline: 0;
+    }
+}

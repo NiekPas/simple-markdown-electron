@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "outFile": "js/main.js",
+        "target": "es5",
+        "listFiles": true,
+        "noEmitOnError": false,
+        "noImplicitReturns": true
+    },
+    "files": [
+        "js/main.ts"
+    ]
+}

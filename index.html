@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SimplyMarkdown</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">      <!-- TODO -->
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+</head>
+<body>
+
+    <!-- TODO show tooltip on convert button click: "Tip: you can use ctrl+spacebar to switch views" -->
+    
+    <div id="editor-buttons" class="collapsed" unselectable="on">
+        <ul>
+            <li id="theme" unselectable="on" title="Toggle darkmode">
+                <i class="fa fa-sun-o" unselectable="on" aria-hidden="true"></i>
+            </li>
+            <li id="html" unselectable="on" title="Copy html output to clipboard">
+                <i class="fa fa-code" unselectable="on" aria-hidden="true"></i>
+            </li>
+            <li id="viewmode" unselectable="on" title="Preview">
+                <i class="fa fa-font" unselectable="on" aria-hidden="true"></i>
+            </li>
+            <li id="fullscreen" unselectable="on" title="Toggle fullscren mode">
+                <i class="fa fa-television" unselectable="on" aria-hidden="true"></i>
+            </li>
+            <li id="options-visibility" unselectable="on" title="Toggle options">
+                <i class="fa fa-cog" unselectable="on" aria-hidden="true"></i>
+            </li>
+        </ul>
+    </div>
+    
+    <div id="editor" contenteditable="true"></div>
+
+    <script>
+      if (typeof module === 'object') {
+        window.module = module; module = undefined;
+      }
+    </script>
+    <script src="js/jquery-2.2.2.min.js"></script>
+    <script src="js/markdown.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>if (window.module) module = window.module;</script>
+</body>
+</html>
