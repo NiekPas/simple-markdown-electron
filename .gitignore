@@ -10,3 +10,4 @@ dist
 #files
 *.tgz
 *.log
+js/main.js

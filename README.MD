@@ -1,6 +1,6 @@
 # Description
 
-simply-markdown is a minimalistic [Markdown](https://daringfireball.net/projects/markdown/) editor for the web. Includes darkmode! simply-markdown is written in HTML, SCSS, and Typescript.
+simple-markdown-electron is an electron inplementation of the minimalistic [Markdown](https://daringfireball.net/projects/markdown/) editor for the web, [simple-markdown](https://github.com/NiekPas/simple-markdown). Includes darkmode! simple-markdown-electron is written in HTML, SCSS, and Typescript.
 
 # Build
 
