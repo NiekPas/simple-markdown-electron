@@ -1,2 +1,12 @@
-node_modules/
-.vscode/
+node_modules
+.vscode
+build
+
+#directories
+bower_components
+node_modules
+dist
+
+#files
+*.tgz
+*.log
