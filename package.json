@@ -1,7 +1,7 @@
 {
   "name": "simple-markdown-electron",
   "version": "1.0.0",
-  "description": "",
+  "description": "An electron distribution of the simplemarkdown app",
   "main": "main.js",
   "dependencies": {
     "gulp": "^3.9.1"
@@ -9,6 +9,7 @@
   "devDependencies": {
     "browser-sync": "^2.18.2",
     "electron": "^1.4.7",
+    "electron-builder": "^8.6.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^2.2.0",
     "gulp-shell": "^0.5.2",
@@ -16,8 +17,19 @@
     "run-sequence": "^1.2.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "build --dir",
+    "dist": "build"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Niek van de Pas",
+  "license": "ISC",
+  "build": {
+    "appId": "simple-markdown",
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "win": {
+      "iconUrl": "(windows-only) https link to icon"
+    }
+  }
 }
